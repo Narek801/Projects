@@ -120,7 +120,7 @@ void findHighestScoringStudent(Student* ptr, int size) {
             sum += (ptr + i)->marks[j];
         }
         result = sum / 3;
-        if (maxi > result) {
+        if (maxi < result) {
             maxi = i;
         }
     }
