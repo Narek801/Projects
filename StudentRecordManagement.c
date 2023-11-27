@@ -114,8 +114,8 @@ void calculateAverageAll(Student* ptr, int size) {
 void findHighestScoringStudent(Student* ptr, int size) {
     int maxi = 0;
     int result = 0;
-    int sum = 0;
     for (int i = 0; i < size; ++i) {
+        int sum = 0;
         for (int j = 0; j < 3; ++j) {
             sum += (ptr + i)->marks[j];
         }
